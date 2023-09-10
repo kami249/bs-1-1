@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+    background-color:   hsl(240, 75%, 98%);
+}
+li, a, button{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 50px;
+}
+
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.nav__links{
+    list-style: none;
+}
+
+.nav__links li{
+    display: inline-block;
+    
+}
+
+.nav__links li a{
+    transition: all 0.3s ease 0s;
+    padding: 0 20px;
+}
+
+.nav__links li a:hover{
+    color: #0088a9;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-left: 20px;
+}
+
+button:hover{
+    background-color: rgba(0, 136, 169, 1);
+}
+
+.container1 {
+    display: flex;
+    flex-direction: row;
+    padding: 60px;
+  }
+
+  .parent1 {
+    flex: 1;
+    padding: 45px;
+    margin: 10px;
+  }
+
+  .child1-1 {
+    margin-bottom: 20px;
+    text-align: left;
+    text-transform: capitalize;
+    font-size: 40px;
+    font-weight: bolder;
+
+  }
+  .child1-2 {
+    margin-bottom: 25px;
+    text-align: left;
+    font-size: 19px;
+  }
+  .child1-3 {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .child img {
+    max-width: 100%;
+    height: auto;
+  }
+  .child1-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .input-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+  }
+
+  .email-input {
+    width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+  }
+
+  .button-div {
+    display: flex;
+    align-items: center;
+  }
+
+  .submit-button {
+    width: 300px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+   /* Style for the parent div */
+   .parent-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(240, 75%, 98%);
+    padding: 60px;
+}
+
+/* Style for the first daughter div (divided into 5 more divs) */
+.first-daughter-div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style for each of the 5 divs within the first daughter div */
+.first-daughter-div .inner-div1 {
+    flex: 1;
+    margin-bottom: 30px;
+    text-align: left;
+    font-size: 40px;
+    font-weight: bolder;
+}
+.first-daughter-div .inner-div2 ,.first-daughter-div .inner-div3 {
+    flex: 1;
+    margin: 5px 5px 10px 5px;
+    font-size: 20px;
+}
+.first-daughter-div .inner-div4 {
+    flex: 1;
+    font-style: italic;
+    margin: 5px;
+}
+
+.first-daughter-div .inner-div4 a{
+    color: green;
+    font-size: 18px;
+    line-height: 15px;
+    text-decoration: underline;
+}
+/* Style for the last div within the first daughter div (divided into 3 more divs) */
+.first-daughter-div .last-inner-div {
+    flex: 1;
+    padding: 0px 20px;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for each of the 3 divs within the last div of the first daughter div */
+.first-daughter-div .last-inner-div .sub-inner-div1 {
+    flex: 1;
+    margin: 5px;
+    font-size: 40px;
+    color: black;
+}
+.first-daughter-div .last-inner-div .sub-inner-div2 {
+    flex: 1;
+    margin: 5px;
+    font-size: 18px;
+    line-height: 23px;
+    color: black;
+}
+.first-daughter-div .last-inner-div .sub-inner-div3 {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    font-size: 40px;
+    color: black;
+}
+.first-daughter-div .last-inner-div .sub-inner-div3 .image img{
+    width: 50px;
+    height: auto;
+    border-radius: 50px;
+}
+.first-daughter-div .last-inner-div .sub-inner-div3 .avatar-name{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    padding-left:10px ;
+}
+.first-daughter-div .last-inner-div .sub-inner-div3 .avatar-name .avatar-or{
+    font-weight: bold;
+}
+/* Style for the second daughter div with an image */
+.second-daughter-div {
+    flex: 1;
+    text-align: center;
+}
+
+/* Style for the image within the second daughter div */
+.second-daughter-div img {
+    max-width: 100%;
+    height: auto;
+}
+.parent3 {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: hsl(238, 22%, 44%);
+    padding: 60px;
+
+}
+
+.child3-1 {
+    flex: 1;
+    min-width: 0;
+    padding: 10px;
+    background-color: hsl(238, 22%, 44%);
+
+}
+.child3-1 h2{
+    padding-bottom: 15px;
+    font-size:40px ;
+    font-weight: bold;
+    color: white;
+    background-color: hsl(238, 22%, 44%);
+}
+.child3-1 p{
+    font-size: 15px;
+    padding-right: 20px;
+    color: white;
+    background-color:hsl(238, 22%, 44%) ;
+}
+
+
+.child3-2 {
+    flex: 1;
+    min-width: 0;
+    background-color: hsl(238, 22%, 44%);
+}
+
+.child3-2 .ch{
+    background-color: hsl(238, 22%, 44%);
+}
+.child3-2 .email-input {
+    margin: 20px 20px 20px 20px;
+    width: 500px;
+}
+
+.child3-2 .submit-button {
+    background-color: #007bff;
+    font-weight: bold;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: hsl(243, 87%, 12%);
+    padding: 60px;
+
+}
+
+.footer-menu {
+    flex: 1;
+    min-width: 0;
+    padding: 10px;
+    background-color: hsl(243, 87%, 12%);
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+.footer-menu img{
+    background-color:hsl(243, 87%, 12%) ;
+    color: white;
+    margin: 40px 0px;
+}
+.foooter{
+    display: flex;
+    flex-direction: row;
+    background-color:hsl(243, 87%, 12%) ;
+
+}
+.foooter i{
+    font-size: 25px;
+    background-color:hsl(243, 87%, 12%) ;
+    color: white;
+    padding-right: 30px;
+    margin-bottom: 20px;
+}
+.foooter-item{
+    font-size: medium;
+    background-color:hsl(243, 87%, 12%) ;
+    color: white;
+
+}
+.footer-menu1{
+    flex: 1;
+    min-width: 0;
+    padding: 10px;
+    background-color: hsl(243, 87%, 12%);
+    margin: 8.5% 5px 5px 5px;
+    box-sizing: border-box;
+}
+
+.hoverable-links {
+    list-style: none;
+    padding: 0;
+    background-color:hsl(243, 87%, 12%) ;
+
+}
+
+.hoverable-links li {
+    margin: 5px 0;
+}
+
+.hoverable-links a {
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: color 0.3s;
+    background-color:hsl(243, 87%, 12%) ;
+
+}
+
+.hoverable-links a:hover {
+    color: #e74c3c;
+}
+.footer-menu1 i{
+    font-size: larger;
+    background-color:hsl(243, 87%, 12%) ;
+    color: white;
+    margin-right: 20px;
+    border: 2px solid white;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 600px) {
+    .container1 {
+      flex-direction: column-reverse;
+    }
+    .child1-3{
+        flex-direction: column;
+    }
+    .parent3 {
+        flex-direction: column;
+    }
+
+    .child3-1, .child3-2 {
+        flex: none;
+        width: 100%;
+    }
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer-menu {
+        flex: none;
+        width: 100%;
+    }
+
+
+}
